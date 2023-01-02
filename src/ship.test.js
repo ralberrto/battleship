@@ -54,4 +54,13 @@ describe('Ship Commands', () => {
     expect(ship.isSunk()).toBe(true);
   });
 
+  test('Ship doesn\'t sink when it hasn\'t received an amout of hits equal to length', () => {
+    const length = 2;
+    const ship = Ship(length);
+    for (let i = 0; i < length - 1; i++) {
+      ship.hit();
+      expect(ship.isSunk()).toBe(false);
+    }
+  });
+
 });
