@@ -9,11 +9,18 @@ const Ship = function(length) {
   }
 
   const hit = function() {
+    if (_hits === _length) throw RangeError('Ship cannot take more hits than its length');
     _hits++;
+  }
+
+  const isSunk = function() {
+    if (_hits === _length) return true;
+    return false;
   }
 
   const instance = {
     hit,
+    isSunk,
   };
 
   Object.defineProperties(instance, {
