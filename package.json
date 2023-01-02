@@ -1,0 +1,26 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "Classic Battleshipt Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralberrto/battleship.git"
+  },
+  "author": "Rafael Alberto Larios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralberrto/battleship/issues"
+  },
+  "homepage": "https://github.com/ralberrto/battleship#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "jest": "^29.3.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
