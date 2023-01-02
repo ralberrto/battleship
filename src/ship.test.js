@@ -6,4 +6,14 @@ describe('Ship', () => {
     const ship = Ship(length);
     expect(ship.length).toEqual(length);
   });
+  test('Length too short error', () => {
+    expect(() => {
+      const ship = Ship(1);
+    }).toThrow(RangeError);
+  });
+  test('Length too long error', () => {
+    expect(() => {
+      const ship = Ship(6);
+    }).toThrow(RangeError);
+  });
 });
